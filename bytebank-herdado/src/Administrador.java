@@ -1,13 +1,13 @@
-//Gerente é um funcionario, Gerente herda da classe Funcionario, assina o contrato autenticavel, é um Autenticavel
-public class Gerente extends Funcionario implements Autenticavel {
+//Gerente é um funcionarioAutentucavel, Gerente herda da classe FuncionarioAutenticavel
+public class Administrador extends Funcionario implements Autenticavel {
 	
 	private int senha;
 	
+	@Override
 	public double getBonificacao() {
-		System.out.println("Chamando o método de bonificacao do GERENTE");
-		return super.getSalario();
+		return 50;
 	}
-
+	
 	@Override
 	public void setSenha(int senha) {
 		this.senha = senha;
